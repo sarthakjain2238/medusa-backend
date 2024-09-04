@@ -22,8 +22,8 @@ jobs:
       with:
         terraform_version: 1.5.0  # Specify the Terraform version you want to use
 
-    - name: Terraform Init
-      run: terraform init 	
+    - name: Terraform destroy
+      run: terraform destroy
 
     - name: Terraform Apply
       run: terraform apply -auto-approve  
