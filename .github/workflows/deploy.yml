@@ -24,6 +24,7 @@ jobs:
 
     - name: Terraform destroy
       run: terraform destroy -auto-approve
+	working-directory: ./terraform
       env:
         AWS_REGION: ap-south-1  # Replace with your AWS region
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
